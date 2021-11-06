@@ -1,0 +1,45 @@
+h1 {
+  font-size: 3.5rem;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.padding-top {
+  padding-top: 5rem;
+}
+
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.highlight-red {
+  color: #EF3B41;
+}
+
+.highlight-purple {
+  color: #B600A6;
+}
+
+.highlight-blue {
+  color: #5D4CF7;
+}
+
+.highlight-gold {
+  color: #9A6C00;
+}
+
+.highlight-green {
+  color: #1BAC49;
+}
+
+pre.text {
+  font-size: 2rem;
+}
