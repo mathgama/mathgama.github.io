@@ -2,6 +2,10 @@ h1 {
   font-size: 3.5rem;
 }
 
+h2 {
+  font-size: 3rem;
+}
+
 .navbar-nav {
   margin-left: auto;
 }
@@ -40,6 +44,20 @@ h1 {
   color: #1BAC49;
 }
 
-pre.text {
-  font-size: 2rem;
+#code {
+  font-size: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  #code {
+    font-size: 2rem;
+  }
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+#about {
+  font-size: 1.25rem;
 }
