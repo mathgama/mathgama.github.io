@@ -6,6 +6,15 @@ h2 {
   font-size: 3rem;
 }
 
+a {
+  text-decoration: none;
+  color: #0086ff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 /* Navbar */
 
 .navbar-nav {
@@ -101,7 +110,7 @@ section {
 .timeline h3 {
   font-weight: 600;
   font-size: 1rem;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .timeline .event {
@@ -182,15 +191,6 @@ section {
   right: -55.8px;
 }
 
-.timeline a {
-  text-decoration: none;
-  color: #0086ff;
-}
-
-.timeline a:hover {
-  text-decoration: underline;
-}
-
 /* Education */
 
 #education h6 {
@@ -205,13 +205,8 @@ section {
   margin-bottom: 30px;
 }
 
-/* Certificates */
+/* Contact */
 
-#certificates a {
-  text-decoration: none;
-  color: #0086ff;
-}
-
-#certificates a:hover {
-  text-decoration: underline;
+#contact img {
+  margin-right: 6px;
 }
