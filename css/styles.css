@@ -15,6 +15,15 @@ a:hover {
   text-decoration: underline;
 }
 
+.card a {
+  color: #000000;
+}
+
+.card a:hover {
+  color: #0086ff;
+  text-decoration: none;
+}
+
 section {
   padding-top: 4rem;
 }
