@@ -63,6 +63,9 @@
 						<a class="nav-link" href="#contact">contacts</a>
 					</li>
 				</ul>
+				<button id="theme-toggle" aria-label="Toggle dark mode">
+					<i class="bi bi-moon"></i>
+				</button>
 			</div>
     </div>
   </nav>
@@ -243,5 +246,28 @@
     </section>
   </div>
   
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    const icon = toggle.querySelector('i');
+    const saved = localStorage.getItem('theme');
+
+    if (saved === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      icon.className = 'bi bi-sun';
+    }
+
+    toggle.addEventListener('click', () => {
+      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      if (isDark) {
+        document.documentElement.removeAttribute('data-theme');
+        icon.className = 'bi bi-moon';
+        localStorage.setItem('theme', 'light');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        icon.className = 'bi bi-sun';
+        localStorage.setItem('theme', 'dark');
+      }
+    });
+  </script>
 </body>
 </html>
