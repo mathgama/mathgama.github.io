@@ -282,6 +282,7 @@ section {
   gap: 5px;
   color: #B600A6;
   min-width: 110px;
+  font-size: 0.9rem;
 }
 
 .terminal-separator {
@@ -305,4 +306,41 @@ section {
 
 .terminal-prompt:last-child {
   margin-bottom: 0;
+}
+
+/* Projects terminal */
+
+.terminal-project-name {
+  font-weight: 600;
+  white-space: nowrap;
+  min-width: 220px;
+}
+
+.terminal-project-desc {
+  color: #555;
+  font-size: 0.88rem;
+  flex: 1;
+}
+
+.terminal-project-tag {
+  color: #B600A6;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  margin-left: auto;
+}
+
+@media (max-width: 767px) {
+  .terminal-row {
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .terminal-project-name {
+    min-width: unset;
+    width: 100%;
+  }
+
+  .terminal-project-tag {
+    margin-left: 0;
+  }
 }
